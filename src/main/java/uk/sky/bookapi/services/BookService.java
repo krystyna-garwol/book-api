@@ -15,7 +15,8 @@ public class BookService {
     BookRepository bookRepository;
 
     public List<Book> getBooks() {
-        return bookRepository.findAll();
+        List<Book> books = bookRepository.findAll();
+        return books;
     }
 
     public Optional<Book> getBook(String id) {
